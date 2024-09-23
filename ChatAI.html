@@ -43,6 +43,20 @@
     <br>
     <br>
     <br>
+    <meta name="google-signin-client_id" content="410191090949-4vb1agm8p5mjqtq8iujlfisdkm0irm5u.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    <script>
+      function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId());
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail());
+}
+
+    </script>
     <h1 class="gr">ChatAI</h1>
     <h2>A Flask web app using Google Bard and Search APIs to create a feature-rich generative chatbot.</h2>
     <br>
